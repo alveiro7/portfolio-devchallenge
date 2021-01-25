@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color1: #4F4F4F;
+    --color2: #828282;
+    --color3: #333333;
+    --fondo1: #f2f2f2;
+    --fondo2: #ffffff;
+    --pink: #ff9595;
+
+    --min: 27rem;
+    --relleno: 2.2rem;
+}
+
+body {
+    background: var(--fondo1);
+}
+
+.card {
+    background-color: var(--fondo2);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    min-height: var(--min);
+    min-width: var(--min);
+    width: 30%;
+    padding: 2.2rem;
+    margin: 2rem auto;
+}
+
+h1 {
+    color: var(--color1);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--color2);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.card__photo {
+    border-radius: 1.2rem;
+    height: 10%;
+    min-height: 12rem;
+    min-width: 12rem;
+    width: 30%;
+}
+
+.phone {
+    width: 2rem;
+    height: 1.6rem;
+}
+
+.email {
+    width: 2rem;
+    height: 1.6rem;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills-heading {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+.bar {
+    height: .8rem;
+    width: 20rem;
+    background-color: var(--color2);
+    border-radius: 1.2rem;
+}
+
+.javascript,
+.css,
+.vue,
+.redux,
+.react,
+.html,
+.figma,
+.adobe{
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: var(--pink);
+}
+
+.javascript {
+    width: 15rem;
+}
+
+.css {
+    width: 20rem;
+}
+
+.vue {
+    width: 18rem;
+}
+
+.redux {
+    width: 12rem;
+}
+
+.react {
+    width: 19rem;
+}
+
+.html {
+    width: 16rem;
+}
+
+.figma {
+    width: 2rem;
+}
+
+.adobe {
+    width: 1rem;
+}
+
+.experiences {
+    display: flex;
+}
+
+.experience {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.experience:last-child {
+    margin-bottom: 0;
+}
+
+.experience-img {
+    width: 12rem;
+    margin-right: 4rem;
+}
+
+.experience-time {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 15rem;
+    opacity: 0.8;
+}
+
+.experience-job {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.experience-desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    opacity: 0.8;
+}
+
+.hobbies {
+    display: flex;
+}
+
+.hobbies-title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hobbies-cards {
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies-card {
+    margin-top: auto;
+}
+
+.hobbies-card:first-child {
+    margin-top: 0;
+}
+
+.hobbies-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.hobbies-name {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hobbies-desc {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    opacity: 0.8;
+}
