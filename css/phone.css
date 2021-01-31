@@ -14,42 +14,64 @@ html {
     --color2: #828282;
     --color3: #333333;
     --fondo1: #f2f2f2;
-    --fondo2: #ffffff;
+    --fondo2: #dabeda;
     --blue: rgba(47, 128, 237, 0.7);;
-
-    --min: 27rem;
-    --relleno: 2.2rem;
 }
 
 body {
     background: var(--fondo1);
+    font-weight: 500;
+    line-height: 1.218;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 3em auto;
 }
 
 .card {
     background-color: var(--fondo2);
     border-radius: 1.2rem;
     padding: 2.2rem;
-    margin: 2rem auto;
+    margin: 2rem ;
 }
 
-h1 {
+.profile {
+    max-height: 69.2rem;
+    min-height: 35rem;
+    max-width: 41.3rem;
+    min-width: 20rem;
+}
+
+.profile-name {
     color: var(--color1);
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-h2 {
+.profile-dev {
     color: var(--color2);
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.card__photo {
+.container-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
     border-radius: 1.2rem;
-    height: 35rem;
+    height: 36.6rem;
     min-height: 12rem;
     min-width: 12rem;
-    width: 35rem;
+    width: 35.7rem;
 }
 
 .phone {
@@ -60,6 +82,13 @@ h2 {
 .email {
     width: 2rem;
     height: 1.6rem;
+}
+
+.technology {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
 }
 
 .skills-dev{
@@ -77,16 +106,16 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     width: 35rem;
-    height: 12rem;
+    height: 18rem;
     min-width: 12rem;
-    min-height: 6rem;
+    min-height: 10rem;
 }
 
 .skills-header {
     text-transform: uppercase;
     font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.0rem;
 }
 
 .skill {
@@ -154,6 +183,12 @@ h2 {
 
 .experiences {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 42rem;
+    height: 70rem;
+    min-width: 12rem;
+    min-height: 10rem;
 }
 
 .experience {
@@ -173,7 +208,7 @@ h2 {
 
 .experience-time {
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 15rem;
     opacity: 0.8;
 }
@@ -187,18 +222,24 @@ h2 {
 .experience-desc {
     font-weight: 500;
     font-size: 1.6rem;
-    line-height: 2rem;
-    opacity: 0.8;
+    line-height: 1.9rem;
+    color: var(--color2);
 }
 
 .hobbies {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 42rem;
+    height: 70rem;
+    min-width: 12rem;
+    min-height: 10rem;
 }
 
 .hobbies-title {
     font-weight: 500;
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 1.9rem;
     margin-bottom: 2rem;
 }
 
@@ -216,6 +257,10 @@ h2 {
     margin-top: 0;
 }
 
+.hobbies-container-img {
+    width: 3.69rem;
+    height: 1.39rem;
+}
 .hobbies-img {
     width: 100%;
     height: 12rem;
@@ -231,8 +276,240 @@ h2 {
 }
 
 .hobbies-desc {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2rem;
-    opacity: 0.8;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color:var(--color2);
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.project {
+    background-color: var(--fondo2);
+    border-radius: 1.2rem;
+    padding: 2.2rem;
+    margin: 2rem ;
+    width: 86.2rem;
+    height: 6.6rem;
+}
+
+.project-card {
+    width: 85.9rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project-container-img {
+    width: 32.2rem;
+    height: 27.4rem;
+}
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.95rem ;
+    padding: 2rem;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: var(--color2);
+}
+
+.project-info h1, h2 {
+    margin-bottom: 1.2rem;
+}
+.btn-container {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: auto;
+}
+.btn-primary,
+.btn-outline {
+    padding: 0.72em 2.16em;
+    margin:  0 1.1rem;
+    border: 2px solid var(--blue);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-in;
+}
+.btn-primary {
+    background-color: var(--blue);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #033eff;
+    color: #ffffff;
+}
+
+.btn-outline {
+    color: var(--blue);
+}
+.btn-outline:hover {
+    color: #033eff;
+    border: 2px solid #033eff;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+}
+
+.blog-container small {
+    color:  #E0E0E0;
+    line-height: 1.95rem;
+    font-size: 1.6rem;
+}
+
+.blog-container p {
+    line-height: 1.95rem;
+    font-size: 1.6rem;
+    color:var(--color2)
+}
+
+.blog-container h1 {
+    line-height: 2.96rem;
+    font-size: 2.4rem;
+    color:var(--color3);
+    padding: 2rem 0;
+}
+
+.footer {
+    margin-top: auto;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (min-width: 780px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .aside {
+        width: 32%;
+    }
+
+    main {
+        width: 67%;
+    }
+
+    .contact-info {
+        width: 50%;
+        margin: 2em 0;
+    }
+
+    .email-info img,
+    .phone-number img {
+        width: 25px;
+        height: 25px;
+        margin-top: 0;
+    }
+
+    .profile-card {
+        margin-bottom: 3rem;
+    }
+
+    .technology {
+        margin-top: 0;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .skills-dev {
+        width: 45%;
+    }
+
+    .skills-ux {
+        width: 45%;
+    }
+    .hobbies-section,
+    .experience-section {
+      margin-bottom: 3rem;
+    }
+  }
+  
+/*   @media (min-width: 950px) {
+    .project-section {
+      margin-bottom: 3rem;
+    }
+    .project {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5em;
+    }
+    .project:last-child {
+      margin-bottom: 0;
+    }
+  
+    .project-image {
+      width: 43%;
+    }
+  
+    .project-image img {
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .project-info {
+      width: 53%;
+    }
+  
+    .blog-container {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 0;
+    }
+    .blog-container .body-text {
+      margin-bottom: 2em;
+    }
+  
+    .blog-info {
+      width: 40%;
+    }
+    .blog-image {
+      width: 58%;
+    }
+    .blog-image img {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  
+  @media (min-width: 1040px) {
+    .skill {
+      display: flex;
+      justify-content: space-between;
+    }
+    .skill-name {
+      width: 10%;
+    }
+    .skill-stats {
+      width: 60%;
+      margin-top: 3px;
+    }
+    .progress-bar {
+      margin-top: 0;
+    }
+  } */
