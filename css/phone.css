@@ -245,6 +245,8 @@ img {
 }
 
 .technology {
+    display: grid;
+    grid-template:;
     height: 303px;
     width: 415.02px;
     background: var(--fondo2);
@@ -252,6 +254,23 @@ img {
     margin: 5px;
     padding: 17px 22px;
 }
+
+.technology ul:first  {
+    grid-column-start: 1;
+}
+
+.technology .progress__list {
+    grid-column: 2;
+}
+
+.technology ul  {
+    grid-column-start: 1;
+}
+.technology .progress  {
+    grid-column-start: 2;
+}
+
+
 
 .progress {
     position: relative;
