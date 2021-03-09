@@ -246,7 +246,9 @@ img {
 
 .technology {
     display: grid;
-    grid-template:;
+    grid-template: 20px 1fr / 30% 70%;
+    grid-template-areas: "title title"
+                        "list list";
     height: 303px;
     width: 415.02px;
     background: var(--fondo2);
@@ -255,45 +257,124 @@ img {
     padding: 17px 22px;
 }
 
-.technology ul:first  {
-    grid-column-start: 1;
-}
-
-.technology .progress__list {
-    grid-column: 2;
-}
-
-.technology ul  {
-    grid-column-start: 1;
-}
-.technology .progress  {
-    grid-column-start: 2;
+.technology__progress  {
+    line-height: 4vh;
+    grid-area: list;
+    display: grid;
+    place-items: baseline;
+    grid-template-columns: 35% 65%;
+    padding-top: 18px;
 }
 
 
+.technology .techno__title {
+    color:var(--color1);
+    grid-area: title;
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
 
-.progress {
-    position: relative;
-    width: 236.85px;
-    height: 9.6px;
-    border-radius: 12px;
-    background: #c4c4c4;
 }
 
-.progress__fill {
-    width: 40%;
-    height: 100%;
+.technology__progress label {
+    color: var(--color1);
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.technology__progress progress {
+    height: 16px;
+    width: 236px;
+}
+
+
+.project {
     background: var(--fondo2);
+    width: 415.02px;
+    border-radius: 12px;
+    height: 66px;
+    margin: 5px;
+    padding: 17px 22px;
 }
 
-.progress__text {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
+.project__card {
+    height: 480px;
+    width: 415.02px;
+    background: var(--fondo2);
+    border-radius: 12px;
+    margin: 5px;
+    padding: 17px 22px;
 }
 
+.project__img {
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
 
+.project__info h2 {
+    color: var(--color1);
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.project__info h1 {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.project__info p {
+    color: var(--color2);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.project__container-btn button {
+    background: var(--fondo1);
+    color: #2f80ed;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 136px;
+    height: 46px;
+    border-radius: 12px;
+    border: 1px #2f80ed solid;
+}
+
+.project__container-btn button:hover {
+    color: violet;
+    background: #2f80ed;
+    }
 /* .skills-dev{
     display: flex;
     flex-direction: column;
